@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="git-사용법">Git 사용법</h1>
+    <p>
+        <strong>이 내용은 git bash를 이용하는 방법이며, 실제로는 Vscode를 사용한다.</strong>
+    </p>
+    <h2 id="예제에-사용하는-파일">예제에 사용하는 파일</h2>
+    <ol type="1">
+        <li>index.html</li>
+        <li>main.css</li>
+        <li>main.js</li>
+        <li>readme.md (markdown 문서)</li>
+        <li>.gitignore</li>
+        <li>log.txt</li>
+        <li></li>
+    </ol>
+    <h2 id="순서">순서</h2>
+    <ul>
+        <li>해당 디렉터리로 이동하여</li>
+    </ul>
+    <blockquote>
+        <p>
+            <em>git init</em>
+        </p>
+    </blockquote>
+    <ul>
+        <li>git
+            <span style="color:red;">
+                <em>add</em>
+            </span> 명령으로 추적할 파일을 추가(add)한다.</li>
+    </ul>
+    <blockquote>
+        <p>
+            <em>git add index.html</em>
+        </p>
+    </blockquote>
+    <ul>
+        <li>add 시킨 파일을
+            <span style="color:red;">‘
+                <em>rm –cached</em>’</span>를 사용하여 추적(track)에서 제외시킨다.
+            <em>
+                <strong>wildcard(asterisk) 문자를 사용할 수 있다.</strong>
+            </em> 모든 파일을 add하려면
+            <br />(‘
+            <em>
+                <strong>git add .</strong>
+            </em>’)</li>
+    </ul>
+    <blockquote>
+        <p>
+            <em>git rm –cached index.html</em>
+        </p>
+    </blockquote>
+    <ul>
+        <li>모든 파일을 add 시킨다.</li>
+    </ul>
+    <blockquote>
+        <p>
+            <em>git add
+                <strong>.</strong>
+            </em>
+        </p>
+    </blockquote>
+    <ul>
+        <li>
+            <em>git status</em> 로 상태를 확인한다.</li>
+    </ul>
+    <blockquote>
+        <p>
+            <em>git status</em>
+        </p>
+    </blockquote>
+    <ul>
+        <li>
+            <em>git commit</em> 명령으로 vim editor로 들어간다.</li>
+    </ul>
+    <blockquote>
+        <p>
+            <em>git commit</em>
+        </p>
+    </blockquote>
+    <ul>
+        <li>Vim editor 상태</li>
+    </ul>
+    <ol type="1">
+        <li>’
+            <strong>i</strong> ’를 입력하여 insert mode로 들어간다.</li>
+        <li>commit할 문자를 입력한다. (commit할 문자란 github에 내가 어떤 내용을 커밋했는지 상기시키도록 해줄 내용이다.)</li>
+        <li>
+            <p>입력이 끝나면 esc key를 눌러 insert mode에서 나온다.</p>
+        </li>
+        <li>
+            <strong>:wq</strong> 를 입력하고 enter.</li>
+        <li>
+            <p>vim editor 상태에서 빠져 나온다.</p>
+        </li>
+    </ol>
+    <ul>
+        <li>
+            <p>
+                <strong>
+                    <span style="color:green;">문서를 수정한 다음 ’수정내용(commit message)’을 커밋할 경우</span>
+                </strong>
+            </p>
+            <ul>
+                <li>특정 파일(예를 들어 index.html)을 커밋할 경우 &gt;
+                    <em>git add index.html</em> &gt;
+                    <em>git commit -m ’changed index.html</em>
+                </li>
+            </ul>
+            <p>
+                <span style="color:green;">여기서 -m은 ’message’란 의미고, 따옴표의 ’changed index.html’은 커밋 메시지의 내용이다.</span>
+                <br>
+                <br>
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>
+                    <span style="color:green;">Git에서 관리하지 않을 문서를 지정(git ignore)하는 방법</span>
+                </strong>
+            </p>
+            <ul>
+                <li>특정 파일(예를 들어 index.html)을 커밋할 경우</li>
+            </ul>
+            <blockquote>
+                <p>
+                    <em>git add index.html</em>
+                </p>
+            </blockquote>
+            <blockquote>
+                <p>
+                    <em>git commit -m ’changed index.html</em>
+                </p>
+            </blockquote>
+            <p>
+                <span style="color:green;">여기서 -m은 ’message’란 의미고, 따옴표의 ’changed index.html’은 커밋 메시지의 내용이다.</span>
+            </p>
+        </li>
+    </ul>
+    <p>
+        <span style="color:green;"></span>
+    </p>
+    <p>첫번째로 commit 한 문서</p>
+</body>
+
+</html>
