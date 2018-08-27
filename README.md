@@ -31,17 +31,21 @@
 
 - add 시킨 파일을 <span style="color:red;">'_rm --cached_ '</span>를  사용하여 추적(track)에서 제외시킨다. _**wildcard(asterisk) 문자를 사용할 수 있다.**_ 모든 파일을 add하려면 <br />('_**git add .**_')
 
+**<span style="color:blue;">commit을 하기 위해서는 WD(Working Directory)의 문서 중 최소 1개 이상의 문서에 변경사항이 있어야 된다. WD 내에 변경된 문서가 없으면 commit해도 소용없다.</span>**
+
 >_git rm --cached index.html_
 
 - 모든 파일을 add 시킨다.
 
->_git add **.**_
+>_git add **.**_ *(모든 파일을 commit할 경우)*
+
+>_git add **index.html**_ *(특정 파일을 commit할 경우의 예)*
 
 - _git status_ 로 상태를 확인한다.
 
 >_git status_
 
-- _git commit_ 명령으로 vim editor로 들어간다.
+- 모든 파일을 commit 한다고 가정하고 _git commit_ 명령으로 vim editor로 들어간다.
 
 >_git commit_
 
@@ -74,6 +78,10 @@
 <span style="color:green;">여기서 -m은 'message'란 의미고, 따옴표의 'changed index.html'은  커밋 메시지의 내용이다.</span>
 
 ##<span style="color:green;">Git에서 관리하지 않을 문서를 지정(gitignore)하는 방법</span>
+
+-------------------
+이하는 작성중임.
+
 
 - Git 관리에서 제외시킬 문서 목록은 '.gitignore 파일에 기록한다. .gitignore 파일을 열고 아래와 같이 'log.txt', 'dir2'(폴더) 를 입력한다.
 
