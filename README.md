@@ -77,10 +77,11 @@
 
 <span style="color:green;">여기서 -m은 'message'란 의미고, 따옴표의 'changed index.html'은  커밋 메시지의 내용이다.</span>
 
-##<span style="color:green;">Git에서 관리하지 않을 문서를 지정(gitignore)하는 방법</span>
-
 -------------------
 이하는 작성중임.
+
+##<span style="color:green;">Git에서 관리하지 않을 문서를 지정(gitignore)하는 방법</span>
+
 
 
 - Git 관리에서 제외시킬 문서 목록은 '.gitignore 파일에 기록한다. .gitignore 파일을 열고 아래와 같이 'log.txt', 'dir2'(폴더) 를 입력한다.
