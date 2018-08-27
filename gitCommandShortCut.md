@@ -7,4 +7,4 @@ git config --global alias.co checkout
 
 * -- global : 전역
 * alias.[약어] : 약자 지정, 예에서는 'co'
-[aliased command] : 약자로 대체되는 명령, 예에서는 checkout
+* [aliased command] : 약자로 대체되는 명령, 예에서는 checkout
