@@ -1,2 +1,2 @@
 console.log('ignore');
-console.log("Hello!");c
+console.log("Hello!");
